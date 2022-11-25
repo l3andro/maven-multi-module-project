@@ -11,7 +11,7 @@
 
     <artifactId>module-a</artifactId>   
     <properties>
-        <sonarPropertieFile>../../sonar.properties</sonarPropertieFile>
+        <sonarPropertieFile>/../sonar.properties</sonarPropertieFile>
     </properties>
     <dependencies>
         <dependency>
