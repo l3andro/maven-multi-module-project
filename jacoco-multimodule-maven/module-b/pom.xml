@@ -11,10 +11,6 @@
 
     <artifactId>module-b</artifactId>
 
-    <properties>
-        <sonarPropertieFile>${project.parent.basedir}/sonar.properties</sonarPropertieFile>
-    </properties>    
-
     <dependencies>
         <dependency>
             <groupId>org.example</groupId>
