@@ -11,6 +11,9 @@
 
     <artifactId>module-c</artifactId>
     <packaging>pom</packaging>
+    <properties>
+        <sonarPropertieFile>${project.parent.basedir}/sonar.properties</sonarPropertieFile>
+    </properties>    
     <modules>
         <module>module-c1</module>
     </modules>
