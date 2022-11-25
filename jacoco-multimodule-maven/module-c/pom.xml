@@ -8,10 +8,12 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <properties>
+    <properties combine.self="override">
         <sonar.jacoco.reportPaths>${project.basedir}/../../target/jacoco.exec</sonar.jacoco.reportPaths>
         <sonar.jacoco.itReportPath>${project.basedir}/../../target/jacoco-it.exec</sonar.jacoco.itReportPath>
+        <sonarPropertieFile>${project.parent.basedir}/sonar.properties</sonarPropertieFile>
     </properties>
+
     <artifactId>module-c</artifactId>
     <packaging>pom</packaging>
    
