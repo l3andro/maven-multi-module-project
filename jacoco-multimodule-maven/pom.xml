@@ -22,6 +22,7 @@
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <sonarPropertieFile>${project.basedir}/sonar.properties</sonarPropertieFile>
     </properties>
 
     <build>
@@ -66,7 +67,7 @@
                         </goals>
                         <configuration>
                         <files>
-                            <file>${maven.home}/sonar.properties</file>
+                            <file>${sonarPropertieFile}</file>
                         </files>
                         </configuration>
                     </execution>
