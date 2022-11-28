@@ -11,6 +11,10 @@
 
     <artifactId>module-c1</artifactId>
 
+    <properties combine.self="override">
+        <sonarPropertieFile>${module-c1.sonarPropertieFile}</sonarPropertieFile>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>

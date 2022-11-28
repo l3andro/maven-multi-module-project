@@ -11,6 +11,7 @@
     <properties combine.self="override">
         <sonar.jacoco.reportPaths>${project.basedir}/../../target/jacoco.exec</sonar.jacoco.reportPaths>
         <sonar.jacoco.itReportPath>${project.basedir}/../../target/jacoco-it.exec</sonar.jacoco.itReportPath>
+        <sonarPropertieFile>${module-c.sonarPropertieFile}</sonarPropertieFile>
     </properties>
 
     <artifactId>module-c</artifactId>

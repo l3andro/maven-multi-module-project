@@ -9,6 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <properties combine.self="override">
+        <sonarPropertieFile>${module-b.sonarPropertieFile}</sonarPropertieFile>
+    </properties>
+
     <artifactId>module-b</artifactId>
     <dependencies>
         <dependency>
