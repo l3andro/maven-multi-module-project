@@ -19,8 +19,6 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <sonarPropertieFile>${project.basedir}/sonar.properties</sonarPropertieFile>
-        <module-a.sonarPropertieFile>${project.basedir}/sonar.properties</module-a.sonarPropertieFile>
-        <module-c.sonarPropertieFile>sonar.properties</module-c.sonarPropertieFile>
     </properties>
 
     <modules>
@@ -73,6 +71,9 @@
                         <files>
                             <file>${sonarPropertieFile}</file>
                         </files>
+                            <tasks>
+                                <echoproperties />
+                            </tasks>
                         </configuration>
                     </execution>
                 </executions>
