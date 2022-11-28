@@ -8,11 +8,7 @@
     <artifactId>jacoco-coverage</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>module-a</module>
-        <module>module-b</module>
-        <module>module-c</module>
-    </modules>
+
 
     <properties>
         <jacoco.version>0.8.6</jacoco.version>
@@ -22,12 +18,15 @@
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <sonarPropertieFile>${project.basedir}/sonar.properties</sonarPropertieFile>
-        <module-a.sonarPropertieFile>${project.basedir}/sonar.properties</module-a.sonarPropertieFile>
-        <module-b.sonarPropertieFile>${project.basedir}/sonar.properties</module-b.sonarPropertieFile>
-        <module-c.sonarPropertieFile>${project.basedir}/sonar.properties</module-c.sonarPropertieFile>
-        <module-c1.sonarPropertieFile>${project.basedir}/sonar.properties</module-c1.sonarPropertieFile>
+        <sonarPropertieFile>${project.build.directory}/sonar.properties</sonarPropertieFile>
+
     </properties>
+
+    <modules>
+        <module>module-a</module>
+        <module>module-b</module>
+        <module>module-c</module>
+    </modules>
 
     <build>
         <plugins>
