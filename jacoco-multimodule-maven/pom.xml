@@ -20,7 +20,7 @@
         <maven.compiler.target>11</maven.compiler.target>
         <sonarPropertieFile>${project.basedir}/sonar.properties</sonarPropertieFile>
         <modula-a.sonarPropertieFile>${project.basedir}/sonar.properties</modula-a.sonarPropertieFile>
-        <modula-c.sonarPropertieFile>${project.basedir}/sonar.properties</modula-c.sonarPropertieFile>
+        <modula-c.sonarPropertieFile>sonar.properties</modula-c.sonarPropertieFile>
     </properties>
 
     <modules>
